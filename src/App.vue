@@ -1,14 +1,18 @@
 <template>
   <v-app>
-    <router-view/>
+    <AppTopBar/>
   </v-app>
 </template>
 
+
 <script>
+import AppTopBar from './components/shared/AppTopBar';
 
 export default {
-  name: 'App',
-
+  name: "App",
+  components: {
+    AppTopBar,
+  },
   data: () => ({
     //
   }),
