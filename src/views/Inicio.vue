@@ -3,10 +3,13 @@
     <v-container class="text-center">
       <h2 class="coleta">Coleta Seletiva</h2>
       <v-img class="imagemLixo" src="../assets/lixo2.png" alt=""></v-img>
-      
-      <h3 class="importancia">Importancia ambiental</h3>
+     <v-list-item-icon> 
+      <h3 class="importancia">Importância ambiental</h3>
 
-      <p>
+      <v-icon class="alerta">mdi-alert</v-icon>
+      </v-list-item-icon>
+
+      <p class="primeiropar">
         O destino final dos resíduos domésticos, industriais e de construção
         civil é um dos agravantes da degradação do meio ambiente. A coleta
         seletiva é uma alternativa que permite diminuir a quantidade de lixo
@@ -18,11 +21,11 @@
       <v-list-item-icon>
         <h3 class="ajudar">Como podemos ajudar?</h3>
 
-        <v-icon>mdi-account-question</v-icon>
+        <v-icon class="ajudaricone">mdi-account-question</v-icon>
       </v-list-item-icon>
-      <p>
-        Confira no nosso Menu Pontos de Coleta e Mais informações sobre os tipos
-        de resíduos
+      <p class="segundopar">
+        Confira no nosso menu lateral os pontos de Coleta e mais informações sobre os tipos
+        de resíduos.
       </p>
     </v-container>
   </div>
@@ -40,15 +43,34 @@ export default {
   border-radius: 10px;
 }
 
+.primeiropar {
+  font-weight: bold;
+}
+
+.segundopar {
+  font-weight: bold;
+}
+
 .coleta {
   color: #1b5e20;
 }
 
 .importancia {
   color: #1b5e20;
+  font-weight: bold;
 }
 
 .ajudar {
   color: #1b5e20;
+}
+
+.alerta {
+    color: #1b5e20;
+    margin-left: 4px;
+}
+
+.ajudaricone{
+  color: #1b5e20;
+  margin-left: 4px;
 }
 </style>
