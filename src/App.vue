@@ -1,6 +1,8 @@
 <template>
   <v-app>
-    AAA
+    <h1>AAA</h1>
+    <v-main>
+    </v-main>
   </v-app>
 </template>
 
