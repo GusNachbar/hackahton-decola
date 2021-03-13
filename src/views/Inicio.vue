@@ -1,7 +1,7 @@
 <template>
   <div class="green lighten-5">
     <v-container class="text-center">
-      <h2 class="coleta">Coleta Seletiva</h2>
+      <h2 class="coleta my-3">Coleta Seletiva</h2>
       <v-img class="imagemLixo" src="../assets/lixo2.png" alt=""></v-img>
      <v-list-item-icon> 
       <h3 class="importancia">Importância ambiental</h3>

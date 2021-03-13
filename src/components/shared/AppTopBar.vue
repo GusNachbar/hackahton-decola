@@ -1,8 +1,8 @@
 <template>
   <div class="app-top-bar">
     <v-app-bar color="green lighten-3" app dark>
-      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-      <v-toolbar-title>Vamos nos conscientizar?</v-toolbar-title>
+      <v-app-bar-nav-icon color="green darken-4" @click="drawer = true"></v-app-bar-nav-icon>
+      <v-toolbar-title class="appTitulo">RECICLATHON</v-toolbar-title>
     </v-app-bar>
     
     <v-navigation-drawer class="green lighten-4" v-model="drawer" absolute temporary>
@@ -57,7 +57,9 @@ export default {
   a {
     text-decoration: none;
   }
-
+.appTitulo{
+  color:#1b5e20;
+}
 </style>
 
 
