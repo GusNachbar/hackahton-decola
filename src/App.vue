@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    AAA
+    <router-view/>
   </v-app>
 </template>
 
