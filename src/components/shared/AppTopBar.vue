@@ -5,7 +5,7 @@
       <v-toolbar-title>Vamos nos conscientizar?</v-toolbar-title>
     </v-app-bar>
     
-    <v-navigation-drawer v-model="drawer" absolute temporary>
+    <v-navigation-drawer class="green lighten-3" v-model="drawer" absolute temporary>
       <v-list nav dense>
         <v-list-item-group
           v-model="group"
@@ -23,7 +23,7 @@
           <router-link to="/pontosdeColeta">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-delete-empty</v-icon>
+                <v-icon>mdi-recycle</v-icon>
               </v-list-item-icon>
               <v-list-item-title>PONTOS DE COLETA</v-list-item-title>
             </v-list-item>
