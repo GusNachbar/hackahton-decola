@@ -6,23 +6,22 @@ import PontosColeta from "../views/PontosColeta.vue"
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
-      path: '/',
-      name: 'Inicio',
-      component: Inicio,
-  },
-  {
-    path: '/saibamais',
-    name: 'SaibaMais',
-    component: SaibaMais,
-  },
-  {
-    path: '/pontosdeColeta',
-    name: 'Pontos de Coleta',
-    component: PontosColeta,
+const routes = [{
+        path: '/',
+        name: 'Inicio',
+        component: Inicio,
+    },
+    {
+        path: '/saibamais',
+        name: 'SaibaMais',
+        component: SaibaMais,
+    },
+    {
+        path: '/pontosdeColeta',
+        name: 'Pontos de Coleta',
+        component: PontosColeta,
 
-}
+    }
 ]
 
 const router = new VueRouter({

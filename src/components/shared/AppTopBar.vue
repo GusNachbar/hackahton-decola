@@ -20,7 +20,7 @@
             </v-list-item>
           </router-link>
 
-          <router-link to="/">
+          <router-link to="/pontosdeColeta">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-delete-empty</v-icon>
@@ -29,7 +29,7 @@
             </v-list-item>
           </router-link>
 
-          <router-link to="/">
+          <router-link to="/saibamais">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-crosshairs-question</v-icon>
