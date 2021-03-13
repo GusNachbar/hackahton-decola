@@ -1,32 +1,29 @@
 <template>
-  <div class="green lighten-5">
+  <div class="green lighten-5 text-center">
+    <span class="white--text"></span>
     <v-container>
       <h1>Pontos de Coleta</h1>
-      <table v-for="pontos of PontosColeta" :key="pontos.id">
-        <thead>
-          <th>
-            {{ pontos.nome }}
-          </th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Materiais que Coleta:</td>
-            <td v-for="categoria in pontos.categorias" :key="categoria">
-              {{ categoria }}
-            </td>
-          </tr>
-          <tr>
-            <td>Endereço</td>
-            <td class="text-right">{{ pontos.endereco }}</td>
-          </tr>
-          <td>
-            <v-avatar size="24">
-              <img :src="pontos.imagem" />
-            </v-avatar>
-            <span class="pl-2">{{ pontos.categorias }}</span>
-          </td>
-        </tbody>
-      </table>
+      <v-list v-for="pontos of PontosColeta" :key="pontos.id" class="green lighten-5 text-center " >
+        <v-list-item class="d-flex my-auto">
+          <v-list-item-icon>
+              <v-img :src="pontos.imagem" class="imgPontos" size="50"> </v-img>
+          </v-list-item-icon>
+            
+          <v-list-item-content>
+            <v-list-item-title class="font-weight-bold">{{ pontos.nome }}</v-list-item-title>
+            <v-list-item-action-text>
+                {{pontos.endereco + " - " + pontos.cep}}
+            </v-list-item-action-text>
+             <div class="textCategoria">
+                <span >Categorias: </span>
+               
+                <span v-for="categoria in pontos.categorias" :key="categoria" class="ml-2">
+                    {{categoria + ';'}}   
+                </span>
+            </div>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
     </v-container>
   </div>
 </template>
@@ -49,4 +46,26 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.imgPontos{
+max-width: 50px;
+border: 1px solid #2e7d32;
+border-radius: 10px;   
+display: flex;
+align-items: center;
+margin-top: 15px;
+}
+.textCategoria{
+    display: flex;
+    flex-flow: wrap;
+    align-content: flex-start;
+    justify-content:center;
+    margin-top: 10px;
+
+}
+
+h1{
+  color: #1b5e20;
+  border-bottom: 3px solid #2e7d32;
+}
+</style>

@@ -5,11 +5,11 @@
       <v-toolbar-title>Vamos nos conscientizar?</v-toolbar-title>
     </v-app-bar>
     
-    <v-navigation-drawer class="green lighten-3" v-model="drawer" absolute temporary>
+    <v-navigation-drawer class="green lighten-4" v-model="drawer" absolute temporary>
       <v-list nav dense>
         <v-list-item-group
           v-model="group"
-          active-class="green--text text--lighten-2"
+          active-class="green--text text--lighten-4"
         >
           <router-link to="/">
             <v-list-item>

@@ -8,7 +8,6 @@
           class="bannerLixos d-flex justify-center mx-auto"
         ></v-img>
       </v-container>
-
       <v-list>
         <v-list-item>
           <v-list-item-icon>
